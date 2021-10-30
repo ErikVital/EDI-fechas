@@ -23,17 +23,7 @@ void dameTipoCantRes(int *num, int *cantidad);
 Fecha sumaFecha(Fecha fecha, int tipo, int cantidadASumar);
 Fecha restaFecha(Fecha fecha, int tipo, int cantidadARestar);
 void imprimeN(Fecha fechaNueva);
-
-/**
-void imprime(Fecha fecha);
-void dameTipoCant(int *num, int *cantidad);
-void dameTipoCantRes(int *num, int *cantidad);
-void capturaFecha(Fecha *fecha);
-
-Fecha sumaFecha(Fecha fecha, int tipo, int cantidadASumar);
-Fecha restaFecha(Fecha fecha, int tipo, int cantidadASumar);
-int compararFechas(Fecha fecha1, Fecha fecha2);
-void imprimeN(Fecha fechaNueva);*/
+int comparaFecha(Fecha fecha, Fecha fechaNueva);
 
 
 int main()
@@ -83,7 +73,7 @@ void capturaFecha(Fecha *fecha)
 	scanf("%d", &fecha->dia);
 	printf("\nMes: ");
 	scanf("%d", &fecha->mes);
-	printf("\nAño: ");
+	printf("\nAÃ±o: ");
 	scanf("%d", &fecha->annio);
 }
 
@@ -91,13 +81,13 @@ void capturaFecha(Fecha *fecha)
 void imprimeN(Fecha fechaNueva)
 {
 	printf("\nNueva Fecha: \n");
-	printf("\n\%d/%d/%d", fechaNueva.dia, fechaNueva.mes, fechaNueva.annio);
+	printf("\n%d/%d/%d", fechaNueva.dia, fechaNueva.mes, fechaNueva.annio);
 }
 
 void dameTipoCant(int *num, int *cantidad)
 {
 	
-	printf("1.-Dia\n2.-Mes\n3.-Año\n");
+	printf("1.-Dia\n2.-Mes\n3.-AÃ±o\n");
 	printf("Dato de la fecha que desea aumentar: ");
 	scanf("%d", num);
 	
@@ -108,7 +98,7 @@ void dameTipoCant(int *num, int *cantidad)
 void dameTipoCantRes(int *num, int *cantidad)
 {
 	
-	printf("1.-Dia\n2.-Mes\n3.-Año\n");
+	printf("1.-Dia\n2.-Mes\n3.-AÃ±o\n");
 	printf("Dato de la fecha que desea disminuir: ");
 	scanf("%d", num);
 	
@@ -265,8 +255,3 @@ int comparaFecha(Fecha fecha, Fecha fechaNueva)
 	
 	return res;
 }
-
-
-
-
-
