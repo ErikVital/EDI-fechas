@@ -1,3 +1,4 @@
+//Vital Muñoz Erik
 #include <stdio.h>
 
 #define DIA 1
